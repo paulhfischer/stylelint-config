@@ -1,0 +1,32 @@
+{
+    "name": "@paulhfischer/stylelint-config",
+    "version": "1.1.0",
+    "description": "Stylelint-config for projects.",
+    "main": "index.js",
+    "author": "Paul Fischer <paul.fischer@mailbox.org>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/paulhfischer/stylelint-config"
+    },
+    "license": "GPL-3.0",
+    "publishConfig": {
+        "access": "public"
+    },
+    "eslintConfig": {
+        "extends": [
+            "@paulhfischer/eslint-config-javascript"
+        ]
+    },
+    "prettier": "@paulhfischer/prettier-config",
+    "peerDependencies": {
+        "stylelint-config-html": "1.0.0",
+        "stylelint-config-standard-scss": "3.0.0",
+        "stylelint-order": "5.0.0"
+    },
+    "files": [
+        "index.js"
+    ],
+    "engines": {
+        "npm": ">=7"
+    }
+}
