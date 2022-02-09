@@ -5,6 +5,12 @@ module.exports = {
         'at-rule-disallowed-list': ['extend'],
         'declaration-colon-space-after': 'always',
         'declaration-property-value-disallowed-list': { '/^border/': ['none'] },
+        'font-family-no-missing-generic-family-keyword': [
+            true,
+            {
+                ignoreFontFamilies: [/^Font Awesome.*/],
+            },
+        ],
         indentation: 4,
         'max-line-length': null,
         'max-nesting-depth': 2,
