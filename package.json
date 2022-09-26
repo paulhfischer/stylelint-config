@@ -1,6 +1,6 @@
 {
     "name": "@paulhfischer/stylelint-config",
-    "version": "1.5.3",
+    "version": "1.5.4",
     "description": "Stylelint-config for projects.",
     "main": "index.js",
     "author": "Paul Fischer <paul.fischer@mailbox.org>",
