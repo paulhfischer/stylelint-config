@@ -1,6 +1,6 @@
 {
     "name": "@paulhfischer/stylelint-config",
-    "version": "1.11.2",
+    "version": "1.12.0",
     "description": "Stylelint-config for projects.",
     "main": "index.js",
     "author": "Paul Fischer <paul.fischer@mailbox.org>",
@@ -20,7 +20,7 @@
     "prettier": "@paulhfischer/prettier-config",
     "peerDependencies": {
         "stylelint-config-html": "1.1.0",
-        "stylelint-config-standard-scss": "7.0.1",
+        "stylelint-config-standard-scss": "8.0.0",
         "stylelint-order": "6.0.3"
     },
     "files": [
