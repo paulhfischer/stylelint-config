@@ -10,7 +10,7 @@
     - stylelint@15.11.0
     - stylelint-config-html@1.1.0
     - stylelint-config-standard-scss@11.1.0
-    - stylelint-order@6.0.3
+    - stylelint-order@6.0.4
   types:
     - file
   files: \.(css|scss|sass|html|php)$
