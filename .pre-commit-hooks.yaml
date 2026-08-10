@@ -5,7 +5,7 @@
   args:
     - '--fix'
   additional_dependencies:
-    - postcss@8.5.25
+    - postcss@8.5.26
     - postcss-html@2.0.0
     - stylelint@17.14.1
     - stylelint-config-html@2.0.0
