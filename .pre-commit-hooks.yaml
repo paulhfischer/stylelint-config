@@ -1,17 +1,18 @@
 - id: lint
   name: Lint (S)CSS
-  entry: stylelint
+  entry: paulhfischer-stylelint
   language: node
   args:
     - '--fix'
+    - '--allow-empty-input'
   additional_dependencies:
-    - postcss@8.5.29
+    - '@stylistic/stylelint-plugin@5.3.1'
+    - postcss@8.5.30
     - postcss-html@2.0.0
     - stylelint@17.16.0
     - stylelint-config-html@2.0.0
     - stylelint-config-standard-scss@17.0.0
-    - stylelint-order@8.1.2
   types:
     - file
-  files: \.(css|scss|sass|html|php)$
-  exclude: (^node_modules|\.min\.css$)
+  files: \.(css|scss|html|php)$
+  exclude: ((^|/)node_modules/|\.min\.css$)

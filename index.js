@@ -1,9 +1,7 @@
 module.exports = {
     extends: ['stylelint-config-standard-scss', 'stylelint-config-html'],
-    plugins: ['stylelint-order'],
     rules: {
         'at-rule-disallowed-list': ['extend'],
-        'declaration-colon-space-after': 'always',
         'declaration-property-value-disallowed-list': { '/^border/': ['none'] },
         'font-family-no-missing-generic-family-keyword': [
             true,
@@ -11,8 +9,6 @@ module.exports = {
                 ignoreFontFamilies: [/^Font Awesome.*/],
             },
         ],
-        indentation: 4,
-        'max-line-length': null,
         'max-nesting-depth': 2,
         'no-descending-specificity': null,
         'no-duplicate-selectors': null,
@@ -20,4 +16,15 @@ module.exports = {
         'selector-class-pattern': '^[a-z]+[\\w-]*$',
         'selector-max-id': 0,
     },
+    overrides: [
+        {
+            // stylesheets are formatted by prettier, styles embedded in markup are not
+            files: ['**/*.html', '**/*.php'],
+            plugins: ['@stylistic/stylelint-plugin'],
+            rules: {
+                '@stylistic/declaration-colon-space-after': 'always',
+                '@stylistic/indentation': 4,
+            },
+        },
+    ],
 };
